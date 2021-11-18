@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplikacija</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="kartica">
+        <h1>ToDo</h1>
+        <form action="">
+          <input class="tekst" type="text">
+          <button class="dugme" type="submit">&#10004;</button>
+          <button id="tezina" type="button">LAKO</button>
+        </form>
+       <ul id="dodaj" class="lista">
+        </ul>
+      </div>
+      <div class="kartica">
+        <h1>InProgress</h1>
+        <ul id="ubaci" class="lista">
+        </ul>
+      </div>
+      <div class="kartica">
+        <h1>Done</h1>
+        <ul id="DONE" class="lista">
+          
+        </ul>
+      </div>
+    </div>
+    <script src="script/javascript.js"></script>
   </body>
 </html>

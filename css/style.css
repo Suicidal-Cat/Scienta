@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 200px 15% auto 15%;
+    width: 70%;
+    display: flex;
+
+}
+.kartica{
+    background-color:rgb(164, 223, 164);
+    width: 28%;
+    margin: 0 5px;
+    padding: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+}
+.kartica:not(:last-child){
+    margin-right: 8%;
+}
+h1{
+    margin-bottom: 5px;
+}
+.dugme{
+    
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+button{
+    float:right;
+}
+.tekst{
+    font-size: 20px;
+    line-height: 25px;
+    width: 68%;
+}
+.lista{
+    width: 100%;
+    list-style: none;
+}
+.lista .stavka{
+    font-size: 24px;
+    word-wrap: break-word;
+    background-color: orange;
+    margin: 5px 0;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+}
+.lista .stavka button{
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+}
+.lista .done{
+    background-color: slateblue;
+    text-decoration: line-through;
+}/*ovo je kada se prebaci u karticu done kako da izgleda*/
+
