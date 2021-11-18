@@ -12,9 +12,9 @@ function divMaker(text){
     var h2_question = document.createElement("h2");
     var h2_answer = document.createElement("h2");
 
-    div.className = 'flashcards';
+    div.className = 'flashcard';
 
-    h2_question.setAttribute('style', "border-top: 1px solid green; padding: 15px; margin-top 30px");
+    h2_question.setAttribute('style', "padding: 15px; margin-top 30px");
 
     h2_question.innerHTML = text.my_question;
 

@@ -44,21 +44,44 @@ h1{
     align-content: center;
 }
 
-.create-box{
-    width:350px;
+.container{
+    width: 95%;
     margin: auto;
+}
 
+.create-box{
+    width:380px;
+    margin: auto;
+    padding: 20px;
     background-color: whitesmoke;
     border-radius: 15px;
     box-shadow: gray;
     align-self: center;
 }
 
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
 .flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 45px;
+    padding: 0 10px;
+}
+
+.flashcard{
     width: 370px;
     height: 200px;
     word-wrap: break-word;
     margin: 10px;
     background-color: white;
-    box-shadow: 10px;
+    box-shadow: 0 2px 4px 0 black;
 }
