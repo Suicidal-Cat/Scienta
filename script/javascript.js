@@ -1,6 +1,20 @@
 const dodaj=function stavka(event){
     event.preventDefault();
     const uneti_tekst=document.querySelector('input').value;
+    //provera dali uneti tekst vec postoji
+    for(let i=0;i<localStorage.length;i++){
+        const key=localStorage.key(i);
+        const value=localStorage.getItem(key);
+        const value1=value.split('>');
+        let pomocni='';
+        pomocni+=value1[1];
+        const value2=pomocni.split('<');
+        if(value2[0].toUpperCase()===uneti_tekst.toUpperCase()){
+            alert("Vec postoji obaveza sa tim nazivom!");
+            event.target.reset();
+            return;
+        }
+    }
     if(uneti_tekst){
         const boja=vratiboju();
         const nova_stavka='<li '+boja+ ' class="stavka">'+uneti_tekst+'<button>&#8680;</button></li>';
@@ -15,7 +29,7 @@ const dodaj=function stavka(event){
 const vratiboju=function(){
     var boja;
     const tezina=document.getElementById('tezina');
-        if(tezina.innerHTML==='Easy')boja='style="background-color: #8FBC8F;"';
+        if(tezina.innerHTML==='Easy')boja='style="background-color:#8FBC8F;"';
         else if(tezina.innerHTML==='Medium')boja='style="background-color:#F0E68C;"';
         else boja='style="background-color:#F08080;"'
     return boja;
@@ -92,7 +106,6 @@ function obrisiel(dogadjaj){
             const value2=pomocni.split('<');
             if(key_1[0]==="treci" && value2[0]===elem.innerHTML){
                         localStorage.removeItem(key);
-                        console.log('jednom');
                         break; 
                     }
             }
@@ -112,12 +125,12 @@ document.querySelector('#ubaci').addEventListener('click',prebaciUDone)//prebacu
 document.querySelector('#DONE').addEventListener('click',obrisiel);//brise kada klines na karticu done
 
 //ucitavanja iz local storage
+if(localStorage.length==1)localStorage.setItem('index',0);
 for(let i=0;i<localStorage.length;i++){
     const key=localStorage.key(i);
     const value=localStorage.getItem(key);
     const key_1=key.split('_');
      if(key_1[0]==="prvi"){
-      
         document.querySelector('#dodaj').insertAdjacentHTML('beforeend',value);
     }
     if(key_1[0]==="drugi"){

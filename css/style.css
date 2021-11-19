@@ -21,9 +21,11 @@ body{
     margin: 0 5px;
     padding: 10px;
     height: min-content;
+    max-height: 600px;
     background-color: whitesmoke;
     border-radius: 15px;
     box-shadow: gray;
+    overflow-y:auto;
 }
 .kartica:not(:last-child){
     margin-right: 8%;
