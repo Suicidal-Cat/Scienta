@@ -61,3 +61,7 @@ function showCreateBox(){
 function hideCreateBox(){
     createBox.style.display = "none";
 }
+
+function goHome(){
+    location.href='index.html';
+}

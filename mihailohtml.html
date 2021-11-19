@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scienta</title>
+    <link rel="stylesheet" href="css/timer.css" />
+    <link rel="icon" type="image/x-icon" href="css/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    
+    <video id="background-video" autoplay loop muted>
+      <source
+        src="css/relax.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h1>Scienta</h1>
+
+    <figure class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="100" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">Start Focus</button>
+      <button class="reset">Reset</button>
+      <button class="pause">Pause</button>
+    </div>
+
+    <form action=".">
+      <label for="focusTime">Focus Time</label>
+      <input type="number" value="1" id="focusTime" />
+      <label for="breakTime">Break Time</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit">Save settings</button>
+      <!---->
+      <button id="ASong" class="lofi">
+        <audio src="css/lofi.webm" autoplay loop></audio>
+        Lofi Beat
+      </button>
+      <button id="BSong" class="white">
+        <audio src="css/noise.webm" autoplay loop></audio>
+        White noise
+      </button>
+      <button type="nazad" onclick="goHome()">Home</button>
+      <!---->
+    </form>
+    <!--
+    <p class="hedfut">
+        <div class="container">
+          <div class="navbar">
+            <img src="" alt="" class="logo" />
+            <ul>
+              <li><a href="#">Početna stranica</a></li>
+              <li><a href="#">To-do</a></li>
+              <li><a href="#">Flashcards</a></li>
+            </ul>
+          </div>
+        </div>
+    </p>-->
+    <script src="script/scritpt.js"></script>
+  </body>
+</html>

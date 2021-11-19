@@ -1,0 +1,19 @@
+button{
+    font-size: large;
+    padding: 18px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin:1px;
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+}
+
+.unutrasnjost{
+    display: inline-block;
+}

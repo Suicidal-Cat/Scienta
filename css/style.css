@@ -11,7 +11,7 @@ body{
     background-color: #B4d3b2;
 }
 .container{
-    margin: 200px 15% auto 15%;
+    margin: 120px 15% auto 15%;
     width: 70%;
     display: flex;
 
@@ -50,6 +50,9 @@ h1{
 #tezina:hover{
     background-color: lightgray;
 }
+#home:hover{
+    background-color: lightgray;
+}
 button{
     float:right;
 }
@@ -81,5 +84,4 @@ button{
 .lista .done{
     background-color: #2F4C39;
     text-decoration: line-through;
-}/*ovo je kada se prebaci u karticu done kako da izgleda*/
-
+}

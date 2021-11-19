@@ -19,8 +19,7 @@ button{
     border: 1px solid lightgray;
     border-radius: 5px;
     background-color: whitesmoke;
-    padding: 15px;
-    margin: 3px;
+    margin:1px;
 }
 
 button:hover{
@@ -33,15 +32,19 @@ h1{
 }
 
 .buttons{
-    margin: 15px;
+    width: 180%;
     text-align: center;
+}
+
+.unutrasnjost{
+    display: inline-block;
 }
 
 .header{
     width: 180px;
     padding: 15px;
-    margin:auto;
     align-content: center;
+    margin-left: 38.5%;
 }
 
 .container{

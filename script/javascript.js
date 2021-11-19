@@ -114,6 +114,9 @@ function obrisiel(dogadjaj){
 
         
 }
+function goHome(){
+    location.href='index.html';
+}
 document.querySelector('form').addEventListener('submit',dodaj)//dodaje zahtev kada se unese forma
 
 document.querySelector('#tezina').addEventListener('click',promeniTezinu)//menja tezinu na click
