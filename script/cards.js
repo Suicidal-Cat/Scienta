@@ -49,7 +49,7 @@ function addFlashcard(){
 }
 
 function delFlashCards(){
-    localStorage.clear();
+    localStorage.removeItem('items');
     flashcards.innerHTML = '';
     contentArray = [];
 }

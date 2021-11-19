@@ -1,19 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.buttons{
+    width: 30%;
+    margin: 0 35% auto 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 button{
     font-size: large;
-    padding: 18px;
+    padding: 15px;
     outline: none;
+    border: none;
     cursor: pointer;
-    border: 1px solid lightgray;
-    border-radius: 5px;
     background-color: whitesmoke;
-    margin:1px;
+    width: 120px;
+    height: 60px;
+    margin:0 4px;
+    border-radius: 2rem;
+    transition: all 1.2 ease-in;
 }
-
-.buttons{
-    width: 100%;
-    text-align: center;
-}
-
-.unutrasnjost{
-    display: inline-block;
+button:hover{
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
