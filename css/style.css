@@ -10,12 +10,13 @@
 
 }
 .kartica{
-    background-color:rgb(164, 223, 164);
+    background-color:rgb(255, 173, 173);
     width: 28%;
     margin: 0 5px;
     padding: 10px;
     border: 2px solid blueviolet;
     border-radius: 20px;
+    height: min-content;
 }
 .kartica:not(:last-child){
     margin-right: 8%;
