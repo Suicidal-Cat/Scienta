@@ -15,17 +15,17 @@ const dodaj=function stavka(event){
 const vratiboju=function(){
     var boja;
     const tezina=document.getElementById('tezina');
-        if(tezina.innerHTML==='LAKO')boja='style="background-color: #8FBC8F;"';
-        else if(tezina.innerHTML==='SREDNJE')boja='style="background-color:#F0E68C;"';
+        if(tezina.innerHTML==='Easy')boja='style="background-color: #8FBC8F;"';
+        else if(tezina.innerHTML==='Medium')boja='style="background-color:#F0E68C;"';
         else boja='style="background-color:#F08080;"'
     return boja;
 }
 const promeniTezinu=function tezina(dogadjaj){
     const tezina=dogadjaj.target;
     //const tezina=document.getElementById('tezina');
-    if(tezina.innerHTML==='LAKO')tezina.innerHTML='SREDNJE';
-    else if(tezina.innerHTML==='SREDNJE')tezina.innerHTML='TESKO';
-    else tezina.innerHTML='LAKO';
+    if(tezina.innerHTML==='Easy')tezina.innerHTML='Medium';
+    else if(tezina.innerHTML==='Medium')tezina.innerHTML='Hard';
+    else tezina.innerHTML='Easy';
 }
 const prebaciUProg=function(dogadjaj){
     if(dogadjaj.target.matches('button')){
