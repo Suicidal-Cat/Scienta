@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .buttons{
-    width: 30%;
+    width: 29%;
     margin: 0 35% auto 35%;
     display: flex;
     justify-content: space-evenly;
@@ -26,4 +26,9 @@ button{
 button:hover{
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+#slika {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

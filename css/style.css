@@ -30,6 +30,18 @@ body{
 .kartica:not(:last-child){
     margin-right: 8%;
 }
+.naslov{
+    width: 96.5%;
+    position: relative;
+    height: 100px;
+    text-align: center;
+}
+#naslov{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 h1{
     margin-bottom: 5px;
 }
@@ -52,6 +64,7 @@ h1{
 }
 #home{
     transition: all 1.2 ease-in;
+    margin-right: 50%;
 }
 #home:hover{
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
