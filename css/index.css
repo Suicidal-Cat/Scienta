@@ -12,16 +12,16 @@
 }
 button{
     font-size: large;
-    padding: 15px;
+    padding: 0 2rem;
     outline: none;
     border: none;
     cursor: pointer;
     background-color: whitesmoke;
-    width: 120px;
+    width: 10rem;
     height: 60px;
     margin:0 4px;
     border-radius: 2rem;
-    transition: all 1.2 ease-in;
+    transition: all 1.2s ease-in;
 }
 button:hover{
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);

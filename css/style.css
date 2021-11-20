@@ -63,7 +63,7 @@ h1{
     background-color: lightgray;
 }
 #home{
-    transition: all 1.2 ease-in;
+    transition: all 1.2s ease-in;
     margin-right: 50%;
 }
 #home:hover{

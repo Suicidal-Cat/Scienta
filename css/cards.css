@@ -20,7 +20,7 @@ button{
     border-radius: 5px;
     background-color: whitesmoke;
     margin:1px;
-    transition: all 1.2 ease-in;
+    transition: all 1.2s ease-in;
 }
 
 button:hover{

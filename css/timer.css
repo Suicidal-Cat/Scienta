@@ -120,7 +120,7 @@ label {
 label,
 button {
   border-radius: 1.5rem;
-  transition: all 1.2 ease-in;
+  transition: all 1.2s ease-in;
 }
 form {
   height: 15%;
